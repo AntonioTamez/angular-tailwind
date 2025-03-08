@@ -7,10 +7,10 @@ import { ResponsiveHelperComponent } from './shared/components/responsive-helper
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  imports: [RouterOutlet, ResponsiveHelperComponent, NgxSonnerToaster],
+  imports: [RouterOutlet, NgxSonnerToaster],
 })
 export class AppComponent {
-  title = 'Angular Tailwind';
+  title = 'Sistema Educativo';
 
   constructor(public themeService: ThemeService) {}
 }
