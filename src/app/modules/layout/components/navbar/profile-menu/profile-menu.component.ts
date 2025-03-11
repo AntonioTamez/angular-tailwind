@@ -1,6 +1,6 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { NgClass } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { ThemeService } from '../../../../../core/services/theme.service';
@@ -86,6 +86,9 @@ export class ProfileMenuComponent implements OnInit {
   ];
 
   public themeMode = ['light', 'dark'];
+
+  @Input() name!: string;
+  @Input() userName!: string;
 
   constructor(public themeService: ThemeService) {}
 
